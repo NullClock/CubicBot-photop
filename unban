@@ -1,0 +1,3 @@
+mongosh $MONGOU \
+--eval "use data" \
+--eval "db.bans.deleteOne({ userid: '$1' })"

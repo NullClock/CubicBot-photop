@@ -1,0 +1,104 @@
+/* Importing fonts from Google Fonts and Bootstrap Icons */
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css");
+
+/* Global styles */
+html,
+body {
+  font-family: "Black Han Sans", sans-serif; /* Setting the default font family */
+  background-color: #000000; /* Setting the background color */
+}
+
+/* Navbar styles */
+.navbar {
+  color: #ffffff; /* Setting text color */
+  position: fixed; /* Fixing the navbar position */
+  top: 0;
+  left: 0;
+  width: 100%; /* Making the navbar span the entire width */
+  background-color: #414141; /* Setting the background color of the navbar */
+  padding: 13px; /* Adding padding */
+}
+
+/* Styling links and buttons in the navbar */
+.navbar a,
+button {
+  background-color: #949494; /* Setting background color */
+  padding: 7px; /* Adding padding */
+  border-radius: 7px; /* Adding border radius */
+  transition: background-color 0.4s; /* Transition effect for background color change */
+  text-decoration: none; /* Removing underline from links */
+  color: #ffffff; /* Setting text color */
+  font-family: "Black Han Sans", sans-serif; /* Setting font family */
+  border: none; /* Removing border */
+  font-size: 15px; /* Setting font size */
+}
+
+/* Hover effect for links and buttons */
+.navbar a:hover,
+button:hover {
+  background-color: #1a71ff; /* Changing background color on hover */
+  cursor: pointer; /* Changing cursor on hover */
+}
+
+/* Table styles */
+table,
+td {
+  border: 1px solid #333; /* Setting border for table and table cells */
+  margin: auto; /* Centering the table */
+}
+
+/* Styles for table header and footer */
+thead,
+tfoot {
+  background-color: #333; /* Setting background color */
+  color: #fff; /* Setting text color */
+}
+
+/* Styles for table body */
+tbody tr td {
+  padding: 5px; /* Adding padding */
+}
+
+/* Additional styles for elements in the navbar */
+.navbar span {
+  position: fixed; /* Fixing position */
+  right: 7px;
+  top: 7px;
+  bottom: 7px;
+}
+
+/* Font size class */
+.fsz {
+  font-size: 25px; /* Setting font size */
+}
+
+/* Content styles */
+.content {
+  margin-top: 65px; /* Adding top margin */
+  color: #ffffff; /* Setting text color */
+}
+
+/* Input field styles */
+input {
+  background-color: #949494; /* Setting background color */
+  border: none; /* Removing border */
+  border-radius: 7px; /* Adding border radius */
+  padding: 7px; /* Adding padding */
+  font-family: "Black Han Sans", sans-serif; /* Setting font family */
+  font-size: 15px; /* Setting font size */
+  color: #ffffff; /* Setting text color */
+}
+
+/* Focus styles for input fields */
+input:focus {
+  outline: none; /* Removing outline on focus */
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 600px) {
+  /* Hiding elements with the class 'fsz' for smaller screens */
+  .fsz {
+    display: none;
+  }
+}
